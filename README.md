@@ -1,15 +1,24 @@
 # Capstone2025
 
-This is my capstone project for 2025. Built using [your tech stack or tools here].
+This is my MA Capstone project at MCAD.  
+It’s the process site for my AIME app.
 
-## Features
+---
 
-- Describe your main features here
-- Maybe your goal or purpose
-- Anything else helpful
+## About
 
-## Getting Started
+The AIME app is designed to support mental health by providing personalized AI-powered assistance.  
+This site documents the design and development process.
 
-1. Clone the repo
-2. Install dependencies
-3. Run the project
+---
+
+## How to Use
+
+Clone this repo and open `index.html` in your browser to explore the site.
+
+---
+
+## Contact
+
+Built by ShaunDigital.co
+
