@@ -1,23 +1,49 @@
-# OS junk
+# macOS system files
 .DS_Store
+
+# Windows system files
 Thumbs.db
+ehthumbs.db
 
-# Node
-node_modules/
-
-# VS Code
+# VS Code settings folder
 .vscode/
 
-# Build output
-dist/
-build/
+# Node.js dependencies (if you ever add node)
+node_modules/
 
 # Logs
 *.log
 
-# Environment files
+# Environment variables
 .env
 
-# Python
-__pycache__/
-*.pyc
+# Build output folders (in case you add build tools)
+dist/
+build/
+
+# Backup and temp files
+*.bak
+*.tmp
+*.swp
+*~
+
+# npm debug files
+npm-debug.log*
+
+# SASS cache folder (if using SASS)
+.sass-cache/
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+
+# OS temp files
+*.tmp
+*.temp
+
+# Coverage reports (if using testing tools)
+coverage/
+
+# Other editors backup files
+*.sublime-workspace
+*.sublime-project
+
