@@ -1,0 +1,84 @@
+:root {
+    --brand-primary: #6d6fb3;
+    --brand-accent: #aadfed;
+    --button-bg: #aadfed;
+    --button-text: #6d6fb3;
+    --bg-main: #7b7e99;
+    --bg-light: #b4edf4;
+    --text-main: #f9fcff;
+    --text-muted: #e2e2f2;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+  }
+  
+  header, section, footer {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  header {
+    background: linear-gradient(120deg, var(--brand-accent), var(--bg-light));
+    text-align: center;
+    color: var(--brand-primary);
+    border-bottom: 3px solid var(--brand-primary);
+  }
+  
+  h1, h2 {
+    color: var(--brand-primary);
+  }
+  
+  nav {
+    background: var(--bg-light);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: var(--brand-primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .section-title {
+    margin-top: 0;
+    border-bottom: 2px solid var(--brand-accent);
+    padding-bottom: 0.5rem;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--text-muted);
+    background-color: var(--bg-light);
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--button-text);
+  }
+  
+  img, iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
