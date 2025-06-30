@@ -82,3 +82,17 @@
     padding-left: 1.5rem;
   }
   
+  .bibliography-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.bibliography-list li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--brand-accent);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  color: var(--text-muted);
+}
