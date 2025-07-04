@@ -96,3 +96,36 @@
   border-radius: 8px;
   color: var(--text-muted);
 }
+
+.site-footer {
+  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  margin: 1rem 0;
+}
+
+.footer-nav a {
+  margin: 0 12px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-note a {
+  color: #666;
+  text-decoration: underline;
+}
