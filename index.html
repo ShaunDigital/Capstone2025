@@ -1,288 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIME – Process Site</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="js/lightbox.js" defer></script>
-
-</head>
-<body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#design">Design</a>
-    <a href="#features">Features</a>
-    <a href="#screens">Screens</a>
-    <a href="#video">Video</a>
-    <a href="#links">Links</a>
-    <a href="#reflection">Reflection</a>
-    <a href="#bibliography">Bibliography</a>
- 
-  </nav>
-
-  <header>
-    <h1>AIME</h1>
-    <p>An AI-powered mental health assistant for anxiety and panic management</p>
-    <a class="button" href="#screens">View Prototype</a>
-  </header>
-
-  <section id="about">
-  <h2 class="section-title">Project Overview</h2>
-  <p>
-    AIME (AI Mental Health Assistant) is a concept app designed to help users manage anxiety and panic attacks through a blend of AI-driven conversation and biometric awareness. It explores how emerging technologies can provide fast, personalized, and stigma-free mental health support—right from your phone.
-  </p>
-  <p>
-    The project goal is to develop a near-development-ready app prototype using Figma, supported by motion design and a process website. The app’s features include an AI chatbot to guide users through calming exercises, a free chat experience, wearable integration, and custom treatment path suggestions.
-  </p>
-  <p>
-    AIME is born out of both personal experience and curiosity: I’ve seen firsthand how anxiety can spiral when left unchecked—and how powerful it is to have tools that respond in the moment. I also regularly use AI in my daily life and believe it has massive potential for meaningful impact beyond convenience. This project asks the question: What if the tech that helps you pick a stock or write an email could also help save someone’s day—or life?
-  </p>
-  <p>
-    The 10-week build focuses on UX design, prototyping, branding, motion graphics, and storytelling. Tools include Figma, Adobe Creative Suite, Visual Studio Code, and good old pen & paper. I’m using this opportunity to sharpen my existing skills and develop new ones, all while pushing toward a portfolio piece I’m genuinely proud of.
-  </p>
-</section>
-
-
-  <section id="research">
-  <h2 class="section-title">Research</h2>
-  <p>
-    Research included analysis of mental health apps like Calm, ADA, Wysa<a href="#wysa2023" class="footnote">[1]</a>, and Youper. Interviews and feedback are planned with users and professionals to refine the app experience.
-  </p>
-  
-  <h3 class="section-title">Research Summary</h3>
-  <p>
-    According to the World Health Organization, anxiety affects more than 300 million people worldwide<a href="#who2023" class="footnote">[2]</a>, yet access to effective treatment remains limited. Whether based on income or social stigma, many do not get the help they need to deal with this issue properly. Cognitive Behavioral Therapy (CBT) has been widely recognized by organizations like the ADAA<a href="#adaa2022" class="footnote">[3]</a> for helping individuals manage symptoms through practical exercises like breathing, journaling, and thought restructuring. However, the issue persists, and without help many will continue to suffer. Anxiety most often affects young adults, particularly women, and is most prevalent in high-income countries—but those in low-income regions are least likely to receive help<a href="#nimh2022" class="footnote">[4]</a>. AIME aims to close this accessibility gap with guided, evidence-based tools at no cost to users.
-  </p>
-
-  <p>
-    New technologies have begun to fill that gap. Apps like MindShift<a href="#mindshift2020" class="footnote">[5]</a> and Wysa<a href="#wysa2023" class="footnote">[1]</a> use CBT frameworks and AI chatbots to guide users through mental health exercises. Others, like Breathhh<a href="#breathhh2023" class="footnote">[6]</a>, integrate smart device sensors to tailor breathing interventions based on biofeedback. These tools align with the vision of AIME: a process platform that offers structured, self-guided treatments while respecting the user’s autonomy and privacy. AIME aims to blend the strengths of digital mental health with human connection, avoiding pitfalls like AI over-dependence or emotional isolation.
-  </p>
-</section>
-
-
-  <section id="design">
-  <h2 class="section-title">Design Process</h2>
-  <p>
-    The design of AIME started with low-fidelity wireframes and sketches to explore flow and function in Design Studio last summer. These early concepts were done with pen and paper, helping to clarify the user journey before moving to digital tools.
-  </p>
-  <p>
-    From there, designs were brought into Figma, where I developed color palettes, typography, and a layout system focused on calm, clarity, and accessibility. The aesthetic choices aim to support a soothing, low-friction experience for users dealing with anxiety and panic.
-  </p>
-  <p>
-    Below are selected screenshots from different phases of the UI design process in Figma, showing progression from early mockups to more polished screens.
-  </p>
-
-  <div class="screenshot-grid">
-  <div class="image-wrapper" data-src="images/logos.jpg" data-caption="logos">
-    <img src="images/logos.jpg" alt="logos" />
-  </div>
-  <div class="image-wrapper" data-src="images/login.jpg" data-caption="login screen">
-    <img src="images/login.jpg" alt="login screen" />
-  </div>
-  <div class="image-wrapper" data-src="images/colors.jpg" data-caption="color selection">
-    <img src="images/colors.jpg" alt="color selection" />
-  </div>
-  <div class="image-wrapper" data-src="images/quiz start 1.jpg" data-caption="quiz start">
-    <img src="images/quiz start 1.jpg" alt="quiz start" />
-  </div>
-  <div class="image-wrapper" data-src="images/more quiz screens.jpg" data-caption="quiz screens">
-    <img src="images/more quiz screens.jpg" alt="quiz screens" />
-  </div>
-  <div class="image-wrapper" data-src="images/onboarding quiz all first drafts.jpg" data-caption="quiz all">
-    <img src="images/onboarding quiz all first drafts.jpg" alt="quiz all" />
-  </div>
-  <div class="image-wrapper" data-src="images/treatment plan colors.jpg" data-caption="plan colors">
-    <img src="images/treatment plan colors.jpg" alt="plan colors" />
-  </div>
-  <div class="image-wrapper" data-src="images/treatment plans bulding.jpg" data-caption="plan designs">
-    <img src="images/treatment plans bulding.jpg" alt="plan designs" />
-  </div>
-  <div class="image-wrapper" data-src="images/breathing plan build draft.jpg" data-caption="breathing draft 1">
-    <img src="images/breathing plan build draft.jpg" alt="breathing draft 1" />
-  </div>
-  <div class="image-wrapper" data-src="images/breathing plan build draft 2.jpg" data-caption="breathing draft 2">
-    <img src="images/breathing plan build draft 2.jpg" alt="breathing draft 2" />
-  </div>
-  <div class="image-wrapper" data-src="images/breathing plan build draft 3.jpg" data-caption="breathing draft 3">
-    <img src="images/breathing plan build draft 3.jpg" alt="breathing draft 3" />
-  </div>
-  <div class="image-wrapper" data-src="images/more screens draft.jpg" data-caption="adtl screens">
-    <img src="images/more screens draft.jpg" alt="adtl screens" />
-  </div>
-  <div class="image-wrapper" data-src="images/meditation draft 1.jpg" data-caption="med plan draft">
-    <img src="images/meditation draft 1.jpg" alt="med plan draft" />
-  </div>
-  <div class="image-wrapper" data-src="images/journal draft 1.jpg" data-caption="journal plan draft">
-    <img src="images/journal draft 1.jpg" alt="journal plan draft" />
-  </div>
-  <div class="image-wrapper" data-src="images/more onboard drafts.jpg" data-caption="onboard drafts">
-    <img src="images/more onboard drafts.jpg" alt="onboard drafts" />
-  </div>
-  <div class="image-wrapper" data-src="images/background textures draft 1.jpg" data-caption="textures draft">
-    <img src="images/background textures draft 1.jpg" alt="textures draft" />
-  </div>
-  <div class="image-wrapper" data-src="images/more textures.jpg" data-caption="textures">
-    <img src="images/more textures.jpg" alt="textures" />
-  </div>
-  <div class="image-wrapper" data-src="images/adding buttons.jpg" data-caption="buttons">
-    <img src="images/adding buttons.jpg" alt="buttons" />
-  </div>
-  <div class="image-wrapper" data-src="images/more meditation screens.jpg" data-caption="more med screens">
-    <img src="images/more meditation screens.jpg" alt="more med screens" />
-  </div>
-  <div class="image-wrapper" data-src="images/more journal screens.jpg" data-caption="more journal screens">
-    <img src="images/more journal screens.jpg" alt="more journal screens" />
-  </div>
-  <div class="image-wrapper" data-src="images/more layout changes.jpg" data-caption="more layouts">
-    <img src="images/more layout changes.jpg" alt="more layouts" />
-  </div>
-  <div class="image-wrapper" data-src="images/more refined screens chat bubble fixed.jpg" data-caption="chat bubbles">
-    <img src="images/more refined screens chat bubble fixed.jpg" alt="chat bubbles" />
-  </div>
-  <div class="image-wrapper" data-src="images/additional component development draft.jpg" data-caption="adtl components dev">
-    <img src="images/additional component development draft.jpg" alt="adtl components dev" />
-  </div>
-  <div class="image-wrapper" data-src="images/building the time picker.jpg" data-caption="time picker build">
-    <img src="images/building the time picker.jpg" alt="time picker build" />
-  </div>
-  <div class="image-wrapper" data-src="images/more time picker dev 2.jpg" data-caption="time picker 2">
-    <img src="images/more time picker dev 2.jpg" alt="time picker 2" />
-  </div>
-  <div class="image-wrapper" data-src="images/more time picker dev 3.jpg" data-caption="time picker 3">
-    <img src="images/more time picker dev 3.jpg" alt="time picker 3" />
-  </div>
-  <div class="image-wrapper" data-src="images/more time picker dev 4.jpg" data-caption="time picker 4">
-    <img src="images/more time picker dev 4.jpg" alt="time picker 4" />
-  </div>
-  <div class="image-wrapper" data-src="images/making the time picker scroll 1.jpg" data-caption="time picker scroll">
-    <img src="images/making the time picker scroll 1.jpg" alt="time picker scroll" />
-  </div>
-  <div class="image-wrapper" data-src="images/more time picker dev 5.jpg" data-caption="more time picker">
-    <img src="images/more time picker dev 5.jpg" alt="more time picker" />
-  </div>
-  <div class="image-wrapper" data-src="images/building the calendar 1.jpg" data-caption="calendar build">
-    <img src="images/building the calendar 1.jpg" alt="calendar build" />
-  </div>
-  <div class="image-wrapper" data-src="images/calendar time picker done.jpg" data-caption="time picker done">
-    <img src="images/calendar time picker done.jpg" alt="time picker done" />
-  </div>
-  <div class="image-wrapper" data-src="images/aime complete build.jpg" data-caption="complete build">
-    <img src="images/aime complete build.jpg" alt="complete build" />
-  </div>
-</div>
-
-</section>
-
-
-  <section id="features">
-    <h2 class="section-title">Features</h2>
-    <ul>
-      <li>Chatbot for managing panic attacks</li>
-      <li>Smart symptom checker</li>
-      <li>Wearable device integration</li>
-      <li>Custom treatment path suggestions</li>
-    </ul>
-  </section>
-
-  <section id="screens">
-  <h2 class="section-title">Final Screens & Prototype</h2>
-  <p>Below is the interactive prototype created in Figma. Click through to explore AIME’s user flow and interface.</p>
-  <iframe
-  style="border:1px solid #ccc; border-radius:10px; margin-top:1rem;"
-  width="100%"
-  height="500"
-  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/YOdiNWdrvlDT4axLgnmQfr/AIME"
-  allowfullscreen
-></iframe>
-
-
-
-</section>
-
-
-
-<section id="video">
-  <h2 class="section-title">Marketing Video</h2>
-  <p>This promotional motion graphic explains the app’s mission and features.</p>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube-nocookie.com/embed/ImDz-GB9yHs" 
-      title="Marketing Video" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-
-  <section id="links">
-    <h2 class="section-title">Links</h2>
-    <ul>
-      <li><a href="https://github.com/ShaunDigital/Capstone2025" target="_blank">GitHub Repository</a></li>
-      <li><a href="https://www.shaundigital.co/blog" target="_blank">Capstone Blog</a></li>
-      <li><a href="https://www.figma.com/proto/YOdiNWdrvlDT4axLgnmQfr/AIME?page-id=0%3A1&node-id=119-1566&p=f&viewport=-443%2C137%2C0.17&t=8ghyl1QuGQqEUCX7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=119%3A1566" target="_blank">Figma Project</a></li>
-    </ul>
-  </section>
-
-  <section id="reflection">
-    <h2 class="section-title">Reflection</h2>
-    <p>
-      This project helped deepen my skills in UX design and allowed me to explore how AI can positively impact mental health. I learned to balance user needs, aesthetics, and feasibility in a complex space. This project was condensed into a 10 week summer class. This is a culmination of all of my classes during this program at MCAD. 
-    </p>
-  </section>
-
-  <section id="bibliography">
-  <h2 class="section-title">Bibliography</h2>
-  <ul class="bibliography-list">
-    <li id="apa2022">American Psychological Association. (2022). <em>Managing anxiety and stress</em>. <a href="https://www.apa.org/topics/anxiety" target="_blank">https://www.apa.org/topics/anxiety</a></li>
-    
-    <li id="headspace2023">Headspace. (2023). <em>Mental health and mindfulness apps</em>. <a href="https://www.headspace.com" target="_blank">https://www.headspace.com</a></li>
-    
-    <li id="nimh2022">National Institute of Mental Health. (2022). <em>Anxiety disorders</em>. <a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders" target="_blank">https://www.nimh.nih.gov/health/topics/anxiety-disorders</a></li>
-    
-    <li id="wysa2023">Wysa. (2023). <em>Wysa AI chatbot overview</em>. <a href="https://www.wysa.io" target="_blank">https://www.wysa.io</a></li>
-    
-    <li id="mindshift2020">Anxiety Canada. (2020). <em>New MindShift CBT app gives Canadians free anxiety relief</em>. <a href="https://www.anxietycanada.com/articles/new-mindshift-cbt-app-gives-canadians-free-anxiety-relief/" target="_blank">https://www.anxietycanada.com/articles/new-mindshift-cbt-app-gives-canadians-free-anxiety-relief/</a></li>
-    
-    <li id="adaa2022">Anxiety and Depression Association of America. (n.d.). <em>Understanding the facts of anxiety disorders</em>. <a href="https://adaa.org/node/2548" target="_blank">https://adaa.org/node/2548</a></li>
-    
-    <li id="who2023">World Health Organization. (2023). <em>Anxiety disorders</em>. <a href="https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders" target="_blank">https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders</a></li>
-    
-    <li id="breathhh2023">Breathhh. (2023). <em>Smart breathing assistant</em>. <a href="https://www.producthunt.com/products/breathhh" target="_blank">https://www.producthunt.com/products/breathhh</a></li>
-  </ul>
-</section>
-
-
-
-
- <footer class="site-footer">
-  <div class="footer-container">
-    <p>&copy;Shaun Ritchie 2025 Capstone Project Minneapolis College of Art and Design.</p>
-    <p> M.A. Graphic and Web Design</p>
-    
-    <nav class="footer-nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIME – Process Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/lightbox.js" defer></script>
+  </head>
+  <body>
+    <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
+      <a href="#design">Design</a>
+      <a href="#features">Features</a>
       <a href="#screens">Screens</a>
+      <a href="#video">Video</a>
+      <a href="#links">Links</a>
+      <a href="#reflection">Reflection</a>
       <a href="#bibliography">Bibliography</a>
     </nav>
-    
-    <p class="footer-note">
-      Built for educational purposes. Not a substitute for professional mental health care.<br>
-      <a href="https://github.com/ShaunDigital/Capstone2025" target="_blank">View on GitHub</a>
-    </p>
-  </div>
-</footer>
 
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img id="lightbox-image" src="" alt="" />
-  <p id="lightbox-caption"></p>
-</div>
+    <header>
+      <h1>AIME</h1>
+      <p>
+        An AI-powered mental health assistant for anxiety and panic management
+      </p>
+      <a class="button" href="#screens">View Prototype</a>
+    </header>
 
+    <section id="about">
+      <h2 class="section-title">Project Overview</h2>
+      <p>
+        AIME (AI Mental Health Assistant) is a concept app designed to help
+        users manage anxiety and panic attacks through a blend of AI-driven
+        conversation and biometric awareness. It explores how emerging
+        technologies can provide fast, personalized, and stigma-free mental
+        health support—right from your phone.
+      </p>
+      <p>
+        The project goal is to develop a near-development-ready app prototype
+        using Figma, supported by motion design and a process website. The app’s
+        features include an AI chatbot to guide users through calming exercises,
+        a free chat experience, wearable integration, and custom treatment path
+        suggestions.
+      </p>
+      <p>
+        AIME is born out of both personal experience and curiosity: I’ve seen
+        firsthand how anxiety can spiral when left unchecked—and how powerful it
+        is to have tools that respond in the moment. I also regularly use AI in
+        my daily life and believe it has massive potential for meaningful impact
+        beyond convenience. This project asks the question: What if the tech
+        that helps you pick a stock or write an email could also help save
+        someone’s day—or life?
+      </p>
+      <p>
+        The 10-week build focuses on UX design, prototyping, branding, motion
+        graphics, and storytelling. Tools include Figma, Adobe Creative Suite,
+        Visual Studio Code, and good old pen & paper. I’m using this opportunity
+        to sharpen my existing skills and develop new ones, all while pushing
+        toward a portfolio piece I’m genuinely proud of.
+      </p>
+    </section>
 
-</body>
+    <section id="research">
+      <h2 class="section-title">Research</h2>
+      <p>
+        Research included analysis of mental health apps like Calm, ADA, Wysa<a
+          href="#wysa2023"
+          class="footnote"
+          >[1]</a
+        >, and Youper. Interviews and feedback are planned with users and
+        professionals to refine the app experience.
+      </p>
+
+      <h3 class="section-title">Research Summary</h3>
+      <p>
+        According to the World Health Organization, anxiety affects more than
+        300 million people worldwide<a href="#who2023" class="footnote">[2]</a>,
+        yet access to effective treatment remains limited. Whether based on
+        income or social stigma, many do not get the help they need to deal with
+        this issue properly. Cognitive Behavioral Therapy (CBT) has been widely
+        recognized by organizations like the ADAA<a
+          href="#adaa2022"
+          class="footnote"
+          >[3]</a
+        >
+        for helping individuals manage symptoms through practical exercises like
+        breathing, journaling, and thought restructuring. However, the issue
+        persists, and without help many will continue to suffer. Anxiety most
+        often affects young adults, particularly women, and is most prevalent in
+        high-income countries—but those in low-income regions are least likely
+        to receive help<a href="#nimh2022" class="footnote">[4]</a>. AIME aims
+        to close this accessibility gap with guided, evidence-based tools at no
+        cost to users.
+      </p>
+
+      <p>
+        New technologies have begun to fill that gap. Apps like MindShift<a
+          href="#mindshift2020"
+          class="footnote"
+          >[5]</a
+        >
+        and Wysa<a href="#wysa2023" class="footnote">[1]</a> use CBT frameworks
+        and AI chatbots to guide users through mental health exercises. Others,
+        like Breathhh<a href="#breathhh2023" class="footnote">[6]</a>, integrate
+        smart device sensors to tailor breathing interventions based on
+        biofeedback. These tools align with the vision of AIME: a process
+        platform that offers structured, self-guided treatments while respecting
+        the user’s autonomy and privacy. AIME aims to blend the strengths of
+        digital mental health with human connection, avoiding pitfalls like AI
+        over-dependence or emotional isolation.
+      </p>
+    </section>
+
+    <section id="design">
+      <h2 class="section-title">Design Process</h2>
+      <p>
+        The design of AIME started with low-fidelity wireframes and sketches to
+        explore flow and function in Design Studio last summer. These early
+        concepts were done with pen and paper, helping to clarify the user
+        journey before moving to digital tools.
+      </p>
+      <p>
+        From there, designs were brought into Figma, where I developed color
+        palettes, typography, and a layout system focused on calm, clarity, and
+        accessibility. The aesthetic choices aim to support a soothing,
+        low-friction experience for users dealing with anxiety and panic.
+      </p>
+      <p>
+        Below are selected screenshots from different phases of the UI design
+        process in Figma, showing progression from early mockups to more
+        polished screens.
+      </p>
+
+      <div class="screenshot-grid">
+        <div
+          class="image-wrapper"
+          data-src="images/logos.jpg"
+          data-caption="logos"
+        >
+          <img src="images/logos.jpg" alt="logos" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/login.jpg"
+          data-caption="login screen"
+        >
+          <img src="images/login.jpg" alt="login screen" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/colors.jpg"
+          data-caption="color selection"
+        >
+          <img src="images/colors.jpg" alt="color selection" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/quiz start 1.jpg"
+          data-caption="quiz start"
+        >
+          <img src="images/quiz start 1.jpg" alt="quiz start" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more quiz screens.jpg"
+          data-caption="quiz screens"
+        >
+          <img src="images/more quiz screens.jpg" alt="quiz screens" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/onboarding quiz all first drafts.jpg"
+          data-caption="quiz all"
+        >
+          <img
+            src="images/onboarding quiz all first drafts.jpg"
+            alt="quiz all"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/treatment plan colors.jpg"
+          data-caption="plan colors"
+        >
+          <img src="images/treatment plan colors.jpg" alt="plan colors" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/treatment plans bulding.jpg"
+          data-caption="plan designs"
+        >
+          <img src="images/treatment plans bulding.jpg" alt="plan designs" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/breathing plan build draft.jpg"
+          data-caption="breathing draft 1"
+        >
+          <img
+            src="images/breathing plan build draft.jpg"
+            alt="breathing draft 1"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/breathing plan build draft 2.jpg"
+          data-caption="breathing draft 2"
+        >
+          <img
+            src="images/breathing plan build draft 2.jpg"
+            alt="breathing draft 2"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/breathing plan build draft 3.jpg"
+          data-caption="breathing draft 3"
+        >
+          <img
+            src="images/breathing plan build draft 3.jpg"
+            alt="breathing draft 3"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more screens draft.jpg"
+          data-caption="adtl screens"
+        >
+          <img src="images/more screens draft.jpg" alt="adtl screens" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/meditation draft 1.jpg"
+          data-caption="med plan draft"
+        >
+          <img src="images/meditation draft 1.jpg" alt="med plan draft" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/journal draft 1.jpg"
+          data-caption="journal plan draft"
+        >
+          <img src="images/journal draft 1.jpg" alt="journal plan draft" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more onboard drafts.jpg"
+          data-caption="onboard drafts"
+        >
+          <img src="images/more onboard drafts.jpg" alt="onboard drafts" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/background textures draft 1.jpg"
+          data-caption="textures draft"
+        >
+          <img
+            src="images/background textures draft 1.jpg"
+            alt="textures draft"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more textures.jpg"
+          data-caption="textures"
+        >
+          <img src="images/more textures.jpg" alt="textures" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/adding buttons.jpg"
+          data-caption="buttons"
+        >
+          <img src="images/adding buttons.jpg" alt="buttons" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more meditation screens.jpg"
+          data-caption="more med screens"
+        >
+          <img
+            src="images/more meditation screens.jpg"
+            alt="more med screens"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more journal screens.jpg"
+          data-caption="more journal screens"
+        >
+          <img
+            src="images/more journal screens.jpg"
+            alt="more journal screens"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more layout changes.jpg"
+          data-caption="more layouts"
+        >
+          <img src="images/more layout changes.jpg" alt="more layouts" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more refined screens chat bubble fixed.jpg"
+          data-caption="chat bubbles"
+        >
+          <img
+            src="images/more refined screens chat bubble fixed.jpg"
+            alt="chat bubbles"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/additional component development draft.jpg"
+          data-caption="adtl components dev"
+        >
+          <img
+            src="images/additional component development draft.jpg"
+            alt="adtl components dev"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/building the time picker.jpg"
+          data-caption="time picker build"
+        >
+          <img
+            src="images/building the time picker.jpg"
+            alt="time picker build"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more time picker dev 2.jpg"
+          data-caption="time picker 2"
+        >
+          <img src="images/more time picker dev 2.jpg" alt="time picker 2" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more time picker dev 3.jpg"
+          data-caption="time picker 3"
+        >
+          <img src="images/more time picker dev 3.jpg" alt="time picker 3" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more time picker dev 4.jpg"
+          data-caption="time picker 4"
+        >
+          <img src="images/more time picker dev 4.jpg" alt="time picker 4" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/making the time picker scroll 1.jpg"
+          data-caption="time picker scroll"
+        >
+          <img
+            src="images/making the time picker scroll 1.jpg"
+            alt="time picker scroll"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/more time picker dev 5.jpg"
+          data-caption="more time picker"
+        >
+          <img src="images/more time picker dev 5.jpg" alt="more time picker" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/building the calendar 1.jpg"
+          data-caption="calendar build"
+        >
+          <img src="images/building the calendar 1.jpg" alt="calendar build" />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/calendar time picker done.jpg"
+          data-caption="time picker done"
+        >
+          <img
+            src="images/calendar time picker done.jpg"
+            alt="time picker done"
+          />
+        </div>
+        <div
+          class="image-wrapper"
+          data-src="images/aime complete build.jpg"
+          data-caption="complete build"
+        >
+          <img src="images/aime complete build.jpg" alt="complete build" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">Features</h2>
+      <ul>
+        <li>Chatbot for managing panic attacks</li>
+        <li>Smart symptom checker</li>
+        <li>Wearable device integration</li>
+        <li>Custom treatment path suggestions</li>
+      </ul>
+    </section>
+
+    <section id="screens">
+      <h2 class="section-title">Final Screens & Prototype</h2>
+      <p>
+        Below is the interactive prototype created in Figma. Click through to
+        explore AIME’s user flow and interface.
+      </p>
+      <iframe
+        style="border: 1px solid #ccc; border-radius: 10px; margin-top: 1rem"
+        width="100%"
+        height="500"
+        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/YOdiNWdrvlDT4axLgnmQfr/AIME"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="video">
+      <h2 class="section-title">Marketing Video</h2>
+      <p>
+        This promotional motion graphic explains the app’s mission and features.
+      </p>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/ImDz-GB9yHs"
+          title="Marketing Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2 class="section-title">Links</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/ShaunDigital/Capstone2025" target="_blank"
+            >GitHub Repository</a
+          >
+        </li>
+        <li>
+          <a href="https://www.shaundigital.co/blog" target="_blank"
+            >Capstone Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.figma.com/proto/YOdiNWdrvlDT4axLgnmQfr/AIME?page-id=0%3A1&node-id=119-1566&p=f&viewport=-443%2C137%2C0.17&t=8ghyl1QuGQqEUCX7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=119%3A1566"
+            target="_blank"
+            >Figma Project</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section id="reflection">
+      <h2 class="section-title">Reflection</h2>
+      <p>
+        This project helped deepen my skills in UX design and allowed me to
+        explore how AI can positively impact mental health. I learned to balance
+        user needs, aesthetics, and feasibility in a complex space. This project
+        was condensed into a 10 week summer class. This is a culmination of all
+        of my classes during this program at MCAD.
+      </p>
+    </section>
+
+    <section id="bibliography">
+      <h2 class="section-title">Bibliography</h2>
+      <ul class="bibliography-list">
+        <li id="apa2022">
+          American Psychological Association. (2022).
+          <em>Managing anxiety and stress</em>.
+          <a href="https://www.apa.org/topics/anxiety" target="_blank"
+            >https://www.apa.org/topics/anxiety</a
+          >
+        </li>
+
+        <li id="headspace2023">
+          Headspace. (2023). <em>Mental health and mindfulness apps</em>.
+          <a href="https://www.headspace.com" target="_blank"
+            >https://www.headspace.com</a
+          >
+        </li>
+
+        <li id="nimh2022">
+          National Institute of Mental Health. (2022).
+          <em>Anxiety disorders</em>.
+          <a
+            href="https://www.nimh.nih.gov/health/topics/anxiety-disorders"
+            target="_blank"
+            >https://www.nimh.nih.gov/health/topics/anxiety-disorders</a
+          >
+        </li>
+
+        <li id="wysa2023">
+          Wysa. (2023). <em>Wysa AI chatbot overview</em>.
+          <a href="https://www.wysa.io" target="_blank">https://www.wysa.io</a>
+        </li>
+
+        <li id="mindshift2020">
+          Anxiety Canada. (2020).
+          <em>New MindShift CBT app gives Canadians free anxiety relief</em>.
+          <a
+            href="https://www.anxietycanada.com/articles/new-mindshift-cbt-app-gives-canadians-free-anxiety-relief/"
+            target="_blank"
+            >https://www.anxietycanada.com/articles/new-mindshift-cbt-app-gives-canadians-free-anxiety-relief/</a
+          >
+        </li>
+
+        <li id="adaa2022">
+          Anxiety and Depression Association of America. (n.d.).
+          <em>Understanding the facts of anxiety disorders</em>.
+          <a href="https://adaa.org/node/2548" target="_blank"
+            >https://adaa.org/node/2548</a
+          >
+        </li>
+
+        <li id="who2023">
+          World Health Organization. (2023). <em>Anxiety disorders</em>.
+          <a
+            href="https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders"
+            target="_blank"
+            >https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders</a
+          >
+        </li>
+
+        <li id="breathhh2023">
+          Breathhh. (2023). <em>Smart breathing assistant</em>.
+          <a
+            href="https://www.producthunt.com/products/breathhh"
+            target="_blank"
+            >https://www.producthunt.com/products/breathhh</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>
+          &copy;Shaun Ritchie 2025 Capstone Project Minneapolis College of Art
+          and Design.
+        </p>
+        <p>M.A. Graphic and Web Design</p>
+
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#screens">Screens</a>
+          <a href="#bibliography">Bibliography</a>
+        </nav>
+
+        <p class="footer-note">
+          Built for educational purposes. Not a substitute for professional
+          mental health care.<br />
+          <a href="https://github.com/ShaunDigital/Capstone2025" target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img id="lightbox-image" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </body>
 </html>
