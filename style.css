@@ -168,19 +168,19 @@
   gap: 1rem;
   padding: 1rem 0;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch; 
 }
 
 .timeline-item {
-  flex: 0 0 auto; /* prevent shrinking, keep natural width */
-  width: 220px;    /* fixed width for uniformity */
+  flex: 0 0 auto; 
+  width: 220px;    
   text-align: center;
   user-select: none;
 }
 
 .timeline-item img {
   width: 100%;
-  height: 140px;      /* smaller fixed height */
+  height: 140px;      
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
