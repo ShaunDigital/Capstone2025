@@ -1,32 +1,36 @@
-// lightbox.js
+// Wait for DOM content to be loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('myModal');
+  const modalImg = document.getElementById('lightbox-image');
+  const captionText = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('.close');
 
-// Get elements
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const lightboxCaption = document.getElementById('lightbox-caption');
-const lightboxClose = document.getElementById('lightbox-close');
+  // Open lightbox when image wrapper clicked
+  document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+    wrapper.addEventListener('click', () => {
+      const src = wrapper.getAttribute('data-src');
+      const caption = wrapper.getAttribute('data-caption');
 
-// Select all portfolio images
-const portfolioItems = document.querySelectorAll('.portfolio-item img');
+      modal.style.display = 'block';
+      modalImg.src = src;
+      modalImg.alt = caption;
+      captionText.textContent = caption;
+    });
+  });
 
-portfolioItems.forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightboxCaption.textContent = img.alt || img.parentElement.querySelector('p').textContent;
-    lightbox.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  // Close lightbox on close button click
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+    captionText.textContent = '';
+  });
+
+  // Also close lightbox when clicking outside the image
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+      captionText.textContent = '';
+    }
   });
 });
-
-// Close lightbox on clicking close button or outside image
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-
-function closeLightbox() {
-  lightbox.classList.add('hidden');
-  lightboxImg.src = '';
-  lightboxCaption.textContent = '';
-  document.body.style.overflow = 'auto';
-}
