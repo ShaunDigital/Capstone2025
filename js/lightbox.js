@@ -1,36 +1,28 @@
-// Wait for DOM content to be loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all wrappers
+  const wrappers = document.querySelectorAll('.image-wrapper');
   const modal = document.getElementById('myModal');
   const modalImg = document.getElementById('lightbox-image');
   const captionText = document.getElementById('lightbox-caption');
-  const closeBtn = document.querySelector('.close');
+  const closeBtn = modal.querySelector('.close');
 
-  // Open lightbox when image wrapper clicked
-  document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+  wrappers.forEach(wrapper => {
     wrapper.addEventListener('click', () => {
-      const src = wrapper.getAttribute('data-src');
-      const caption = wrapper.getAttribute('data-caption');
-
-      modal.style.display = 'block';
-      modalImg.src = src;
-      modalImg.alt = caption;
-      captionText.textContent = caption;
+      modal.style.display = "block";
+      modalImg.src = wrapper.dataset.src;
+      modalImg.alt = wrapper.dataset.caption;
+      captionText.textContent = wrapper.dataset.caption;
     });
   });
 
-  // Close lightbox on close button click
   closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalImg.src = '';
-    captionText.textContent = '';
+    modal.style.display = "none";
   });
 
-  // Also close lightbox when clicking outside the image
+  // Close modal if user clicks outside the image
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.style.display = 'none';
-      modalImg.src = '';
-      captionText.textContent = '';
+      modal.style.display = "none";
     }
   });
 });
