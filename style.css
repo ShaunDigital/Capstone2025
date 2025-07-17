@@ -241,3 +241,19 @@
   color: #bbb;
 }
 
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* smaller min width */
+  gap: 12px;
+  padding: 1rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 140px; /* limit max width */
+  display: block;
+  object-fit: cover;
+}
+
