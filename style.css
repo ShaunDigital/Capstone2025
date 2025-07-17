@@ -1,89 +1,89 @@
 :root {
-    --brand-primary: #69bff1;
-    --brand-accent: #aadfed;
-    --button-bg: #aadfed;
-    --button-text: #6d6fb3;
-    --bg-main: #7b7e99;
-    --bg-light: #b4edf4;
-    --text-main: #f9fcff;
-    --text-muted: #e2e2f2;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    line-height: 1.6;
-  }
-  
-  header, section, footer {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  header {
-    background: linear-gradient(120deg, var(--brand-accent), var(--bg-light));
-    text-align: center;
-    color: var(--brand-primary);
-    border-bottom: 3px solid var(--brand-primary);
-  }
-  
-  h1, h2 {
-    color: var(--brand-primary);
-  }
-  
-  nav {
-    background: var(--bg-light);
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 1rem;
-    color: var(--brand-primary);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .section-title {
-    margin-top: 0;
-    border-bottom: 2px solid var(--brand-accent);
-    padding-bottom: 0.5rem;
-  }
-  
-  footer {
-    font-size: 0.9rem;
-    text-align: center;
-    color: var(--text-muted);
-    background-color: var(--bg-light);
-  }
-  
-  .button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: var(--button-bg);
-    color: var(--button-text);
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid var(--button-text);
-  }
-  
-  img, iframe {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 1rem;
-  }
-  
-  ul {
-    padding-left: 1.5rem;
-  }
-  
-  .bibliography-list {
-  list-style-type: none;
+  --brand-primary: #69bff1;
+  --brand-accent: #aadfed;
+  --button-bg: #aadfed;
+  --button-text: #6d6fb3;
+  --bg-main: #7b7e99;
+  --bg-light: #b4edf4;
+  --text-main: #f9fcff;
+  --text-muted: #e2e2f2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+header, section, footer {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(120deg, var(--brand-accent), var(--bg-light));
+  text-align: center;
+  color: var(--brand-primary);
+  border-bottom: 3px solid var(--brand-primary);
+}
+
+h1, h2 {
+  color: var(--brand-primary);
+}
+
+nav {
+  background: var(--bg-light);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-title {
+  margin-top: 0;
+  border-bottom: 2px solid var(--brand-accent);
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-muted);
+  background-color: var(--bg-light);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--button-text);
+}
+
+img, iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.bibliography-list {
+  list-style: none;
   padding-left: 0;
   margin-top: 1rem;
 }
@@ -97,12 +97,13 @@
   color: var(--text-muted);
 }
 
+/* Footer */
 .site-footer {
-  background-color:  #b4edf4;
+  background-color: var(--bg-light);
   padding: 2rem 1rem;
   text-align: center;
   font-size: 0.9rem;
-  color:#1e90ff;
+  color: #1e90ff;
   border-top: 1px solid #ccc;
 }
 
@@ -115,30 +116,27 @@
   margin: 1rem 0;
 }
 
-.footer-nav a {
+.footer-nav a,
+.footer-note a {
   margin: 0 12px;
   color: #1e90ff;
   text-decoration: none;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover,
+.footer-note a:hover {
   text-decoration: underline;
 }
 
-.footer-note a {
-  color: #1e90ff;
-  text-decoration: underline;
-}
-
+/* Video container */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  margin: 2rem auto; 
+  margin: 2rem auto;
 }
-
 
 .video-container iframe {
   position: absolute;
@@ -146,9 +144,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 12px; 
+  border-radius: 12px;
 }
-
 
 @media (min-width: 768px) {
   .video-container {
@@ -162,22 +159,32 @@
   }
 }
 
-/* Grid container */
+/* Screenshot grid layout */
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 12px;
   padding: 1rem;
 }
 
-/* Each image wrapper */
 .image-wrapper {
-  cursor: pointer;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .image-wrapper:hover {
@@ -185,20 +192,12 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Images inside wrapper */
-.image-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Lightbox modal (already mostly in your CSS) */
+/* Modal/lightbox */
 .modal {
-  display: none; /* hidden by default */
+  display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 60px; /* top spacing for close button */
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
@@ -208,27 +207,20 @@
   text-align: center;
 }
 
-/* Modal image */
 .modal img {
-  width: auto;
-  height: auto;
-  max-width: 90vw;         /* Never exceed viewport width */
-  max-height: 80vh;        /* Never exceed viewport height */
+  max-width: 90vw;
+  max-height: 85vh;
   object-fit: contain;
   border-radius: 10px;
+  margin-top: 1rem;
 }
 
-
-
-
-/* Caption text below the image */
 #lightbox-caption {
   color: #ccc;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
 
-/* Close button style */
 .close {
   position: fixed;
   top: 20px;
@@ -245,46 +237,3 @@
 .close:focus {
   color: #bbb;
 }
-
-
-/* Adjust grid to smaller min thumbnail size */
-.screenshot-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 8px;
-  padding: 1rem;
-}
-
-
-.image-wrapper {
-  height: 120px; /* fix row height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.image-wrapper img {
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-
-
-
-
-
-/* Keep hover scale consistent and subtle */
-.image-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-
-
