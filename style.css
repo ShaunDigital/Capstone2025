@@ -97,7 +97,6 @@ ul {
   color: var(--text-muted);
 }
 
-/* Footer */
 .site-footer {
   background-color: var(--bg-light);
   padding: 2rem 1rem;
@@ -128,10 +127,9 @@ ul {
   text-decoration: underline;
 }
 
-/* Video container */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -159,7 +157,7 @@ ul {
   }
 }
 
-/* Screenshot grid layout */
+/* Grid container */
 .screenshot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -182,7 +180,6 @@ ul {
 .image-wrapper img {
   max-height: 100%;
   width: auto;
-  height: auto;
   object-fit: contain;
   display: block;
 }
@@ -192,7 +189,7 @@ ul {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Modal/lightbox */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
