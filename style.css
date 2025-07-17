@@ -210,11 +210,14 @@
 
 /* Modal image */
 .modal img {
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 95vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
 
 /* Caption text below the image */
 #lightbox-caption {
