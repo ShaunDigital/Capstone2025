@@ -283,27 +283,5 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Reduce screenshot section padding to tighten vertical space */
-section#screenshots {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-/* Optional: tighten header/title spacing */
-section#screenshots h2.section-title {
-  margin-bottom: 1rem;
-}
-
-/* Reduce margin under images */
-.image-wrapper img {
-  margin-bottom: 0; /* override any excess spacing */
-}
-
-/* Make the grid height more compact */
-.screenshot-grid {
-  align-items: start;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
 
