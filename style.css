@@ -269,12 +269,13 @@
 
 .image-wrapper img {
   width: 100%;
-  max-height: 100px;  /* Limit thumbnail height */
+  max-height: 120px;  /* <-- controls how big thumbnails look */
   height: auto;
   display: block;
-  object-fit: cover;  /* Better for thumbnails */
+  object-fit: cover;
   margin: 0;
 }
+
 
 
 
