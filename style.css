@@ -242,18 +242,27 @@
 }
 
 
+/* Adjust grid to smaller min thumbnail size */
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* smaller min width */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 12px;
   padding: 1rem;
+  justify-content: center; /* center the grid */
 }
 
+/* Limit thumbnail image size */
 .image-wrapper img {
   width: 100%;
-  height: auto;
   max-width: 140px; /* limit max width */
+  height: auto;
   display: block;
   object-fit: cover;
+}
+
+/* Keep hover scale consistent and subtle */
+.image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
