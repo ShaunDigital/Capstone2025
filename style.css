@@ -37,14 +37,14 @@ header h1 {
 }
 
 header .logo {
-  height: 150px;    /* bigger logo */
-  max-width: 100%;
-  width: auto;
-  margin: 0 auto;
-  display: block;   /* center block image */
+  display: block;
+  margin: 0 auto 1rem auto; /* center it + some space below */
+  max-width: 200px; /* set an appropriate max size */
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  border-radius: 0;
 }
+
 
 
 
