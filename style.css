@@ -34,18 +34,16 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 2.5rem;
-  color: var(--button-text, #333);
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
-
-
 
 header .logo {
-  height: 24px; 
+  height: 32px;
   width: auto;
-  vertical-align: middle;
+  display: inline-block;
+  object-fit: contain;
 }
+
 
 
 h1, h2 {
