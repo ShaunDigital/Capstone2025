@@ -95,7 +95,7 @@ img, iframe {
 }
 
 header .logo {
-  height: 32px;
+  height: 150px;
   width: auto;
   display: inline-block;
   object-fit: contain;
