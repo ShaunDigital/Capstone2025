@@ -31,20 +31,21 @@ header {
 }
 
 header h1 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header .logo {
-  height: 60px;       /* Adjust as needed */
+  height: 150px;    /* bigger logo */
+  max-width: 100%;
   width: auto;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;   /* center block image */
   object-fit: contain;
-  margin-top: 0;      /* keep no margin on top */
-  border-radius: 0;   /* remove any rounding on logo */
+  border-radius: 0;
 }
+
 
 
 
