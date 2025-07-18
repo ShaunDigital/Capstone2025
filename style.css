@@ -38,11 +38,14 @@ header h1 {
 }
 
 header .logo {
-  height: 32px;
+  height: 60px;       /* Adjust as needed */
   width: auto;
   display: inline-block;
   object-fit: contain;
+  margin-top: 0;      /* keep no margin on top */
+  border-radius: 0;   /* remove any rounding on logo */
 }
+
 
 
 
@@ -94,14 +97,6 @@ img, iframe {
   margin-top: 1rem;
 }
 
-header .logo {
-  height: 500px;
-  width: auto;
-  display: inline-block;
-  object-fit: contain;
-  margin-top: 0;           /* Override the global margin */
-  border-radius: 0;        /* Remove rounding from logo */
-}
 
 
 ul {
