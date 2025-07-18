@@ -94,6 +94,16 @@ img, iframe {
   margin-top: 1rem;
 }
 
+header .logo {
+  height: 32px;
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
+  margin-top: 0;           /* Override the global margin */
+  border-radius: 0;        /* Remove rounding from logo */
+}
+
+
 ul {
   padding-left: 1.5rem;
 }
