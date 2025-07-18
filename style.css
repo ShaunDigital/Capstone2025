@@ -39,9 +39,12 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+
+
 header .logo {
-  height: 40px;
+  height: 24px; 
   width: auto;
+  vertical-align: middle;
 }
 
 
